@@ -1,6 +1,5 @@
 #include<stdlib.h>
 #include<stdio.h>
-#include<ctype.h>
 #include<string.h>
 #include"Stack_float.h"
 
@@ -14,11 +13,11 @@ int main()
 	{
 		scanf("%s",exp);
 		if(exp[0] == '+')
-				{
-					a = pop();
-					b = pop();
-					push(a+b);
-				}
+			{
+				a = pop();
+				b = pop();
+				push(a+b);
+			}
 		else if(exp[0] == '-')
 			{
 				a = pop();
@@ -49,8 +48,6 @@ int main()
 				clean_stack();
 			}
 		else push(atof(exp));
-
-			
 		
 	}
 	return 0;
